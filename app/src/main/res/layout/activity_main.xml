@@ -4,15 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Welcome To, "
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primary"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Girhe Family Champhulya Game"
+        android:textColor="@color/secondary"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6dp"
+        android:text="Play"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/secondary"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/scoreboard"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6dp"
+        android:text="Scoreboard"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/secondary"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6dp"
+        android:text="options"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/secondary"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/scoreboard"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboard" />
+
+    <Button
+        android:id="@+id/credits"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6dp"
+        android:text="credits"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/secondary"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/options"
+        app:layout_constraintTop_toBottomOf="@+id/options" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
